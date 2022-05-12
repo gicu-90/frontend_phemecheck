@@ -12,7 +12,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://phemecheck.com/api/post/')
+    fetch('https://phemecheck.com/api/post/')
     .then(response => response.json())
     .then(total_themes => this.setState({ total_themes: total_themes }))
   }
